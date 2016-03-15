@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.adu.spring_test.webservice.ws.HelloWS;
 
-@WebService(endpointInterface = "com.adu.spring_test.webservice.ws.HelloWS")
+@WebService(targetNamespace = "http://service.cxf.com/", endpointInterface = "com.adu.spring_test.webservice.ws.HelloWS")
 @Service("helloWS")
 public class HelloWSImpl implements HelloWS {
 	private Logger logger = LoggerFactory.getLogger(this.getClass());

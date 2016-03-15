@@ -33,7 +33,7 @@
 		</encoder>
 	</appender>
 
-	<logger name="com.adu.spring_test.web" level="DEBUG" additivity="false">
+	<logger name="com.adu.spring_test.webservice" level="DEBUG" additivity="false">
 		<appender-ref ref="consoleAppender" />
 		<appender-ref ref="webAppender" />
 	</logger>

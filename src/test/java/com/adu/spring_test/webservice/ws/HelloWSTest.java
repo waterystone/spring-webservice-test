@@ -14,7 +14,7 @@ public class HelloWSTest {
 		try {
 			JaxWsDynamicClientFactory factory = JaxWsDynamicClientFactory.newInstance();
 			Client client = factory.createClient("http://127.0.0.1:8080/webservice/ws/hello?wsdl");
-			Object[] res = client.invoke("hello", "阿福");
+			Object[] res = client.invoke("hello", "adu");
 			logger.debug("res={}", res);
 		} catch (Exception e) {
 			logger.error("[ERROR-hello]", e);
