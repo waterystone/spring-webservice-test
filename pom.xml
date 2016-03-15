@@ -21,9 +21,9 @@
 
 		<javax.servlet.version>3.0-alpha-1</javax.servlet.version>
 		<jstl.version>1.2</jstl.version>
-		<fasterxml.jackson.version>2.3.0</fasterxml.jackson.version>
-		<validation.api.version>1.1.0.Final</validation.api.version>
-		<hibernate.validator.version>5.2.4.Final</hibernate.validator.version>
+		
+  		<cxf.version>3.1.5</cxf.version>
+		<xmlschema.version>2.2.1</xmlschema.version>
 		<commons-lang3.version>3.2</commons-lang3.version>
 	</properties>
 
@@ -64,7 +64,7 @@
 		</dependency>
 
 
-
+		<!-- spring -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
@@ -114,28 +114,27 @@
 			<version>${jstl.version}</version>
 		</dependency>
 		
-		<!-- jaxws -->
+		<!-- cxf -->
 		<dependency>
-			<groupId>sun-jaxws</groupId>
-			<artifactId>jaxws-api</artifactId>
-			<version>2.1.1</version>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-frontend-jaxws</artifactId>
+			<version>${cxf.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>sun-jaxws</groupId>
-			<artifactId>jaxws-rt</artifactId>
-			<version>2.1.7</version>
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-transports-http</artifactId>
+			<version>${cxf.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>sun-jaxb</groupId>
-			<artifactId>jaxb-impl</artifactId>
-			<version>2.2</version>
+			<groupId>org.apache.ws.xmlschema</groupId>
+			<artifactId>xmlschema-core</artifactId>
+			<version>${xmlschema.version}</version>
 		</dependency>
-		<dependency>
-			<groupId>com.sun.xml.stream.buffer</groupId>
-			<artifactId>streambuffer</artifactId>
-			<version>1.5.2</version>
-		</dependency>
-
+<!-- 		<dependency>
+			<groupId>com.sun.xml.bind</groupId>
+			<artifactId>jaxb-xjc</artifactId>
+			<version>2.2.11</version>
+		</dependency> -->
 
 		<dependency>
 			<groupId>org.apache.commons</groupId>

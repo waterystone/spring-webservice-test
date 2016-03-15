@@ -1,4 +1,4 @@
-package com.adu.spring_test.webservice.server;
+package com.adu.spring_test.webservice;
 
 import org.junit.Test;
 import org.slf4j.Logger;
