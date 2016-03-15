@@ -1,4 +1,4 @@
-package com.adu.spring_test.webservice.client;
+package com.adu.spring_test.webservice.hello.client;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
@@ -7,12 +7,12 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.adu.spring_test.webservice.mymodel.HelloWS;
-import com.adu.spring_test.webservice.mymodel.HelloWSImplService;
-import com.adu.spring_test.webservice.mymodel.User;
+import com.adu.spring_test.webservice.hello.model.HelloWS;
+import com.adu.spring_test.webservice.hello.model.HelloWSImplService;
+import com.adu.spring_test.webservice.hello.model.User;
 
 public class HelloWSClientTest {
-	private static HelloWS helloWS;
+	private HelloWS helloWS;
 	private Logger logger = LoggerFactory.getLogger(this.getClass());
 
 	@Test

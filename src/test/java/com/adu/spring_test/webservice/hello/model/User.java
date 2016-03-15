@@ -1,5 +1,5 @@
 
-package com.adu.spring_test.webservice.mymodel;
+package com.adu.spring_test.webservice.hello.model;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

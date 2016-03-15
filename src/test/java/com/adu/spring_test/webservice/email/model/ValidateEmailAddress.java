@@ -1,23 +1,23 @@
 
-package com.adu.spring_test.webservice.mymodel;
+package com.adu.spring_test.webservice.email.model;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>addUserResponse complex type的 Java 类。
+ * <p>anonymous complex type的 Java 类。
  * 
  * <p>以下模式片段指定包含在此类中的预期内容。
  * 
  * <pre>
- * &lt;complexType name="addUserResponse"&gt;
+ * &lt;complexType&gt;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="return" type="{http://service.cxf.com/}user" minOccurs="0"/&gt;
+ *         &lt;element name="theEmail" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -27,36 +27,36 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "addUserResponse", propOrder = {
-    "_return"
+@XmlType(name = "", propOrder = {
+    "theEmail"
 })
-public class AddUserResponse {
+@XmlRootElement(name = "ValidateEmailAddress")
+public class ValidateEmailAddress {
 
-    @XmlElement(name = "return")
-    protected User _return;
+    protected String theEmail;
 
     /**
-     * 获取return属性的值。
+     * 获取theEmail属性的值。
      * 
      * @return
      *     possible object is
-     *     {@link User }
+     *     {@link String }
      *     
      */
-    public User getReturn() {
-        return _return;
+    public String getTheEmail() {
+        return theEmail;
     }
 
     /**
-     * 设置return属性的值。
+     * 设置theEmail属性的值。
      * 
      * @param value
      *     allowed object is
-     *     {@link User }
+     *     {@link String }
      *     
      */
-    public void setReturn(User value) {
-        this._return = value;
+    public void setTheEmail(String value) {
+        this.theEmail = value;
     }
 
 }
