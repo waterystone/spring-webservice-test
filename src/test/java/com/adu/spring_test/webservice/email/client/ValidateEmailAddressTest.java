@@ -1,4 +1,4 @@
-package com.adu.spring_test.webservice.email.model.client;
+package com.adu.spring_test.webservice.email.client;
 
 import org.junit.Before;
 import org.junit.Test;
