@@ -5,7 +5,6 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.adu.spring_test.webservice.email.model.ValidateEmailWebService;
 import com.adu.spring_test.webservice.email.model.ValidateEmailWebServiceSoap;
 
 public class ValidateEmailAddressTest {
@@ -22,8 +21,7 @@ public class ValidateEmailAddressTest {
 
 	@Before
 	public void before() {
-		ValidateEmailWebService factory = new ValidateEmailWebService();
-		soap = factory.getValidateEmailWebServiceSoap();
+		soap = SoapFactory.getSoapInstance();
 	}
 
 }
